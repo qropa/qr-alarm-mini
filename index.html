@@ -1,14 +1,46 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/qr-alarm-mini/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-    <script type="module" crossorigin src="/qr-alarm-mini/assets/index-CVdUBL9p.js"></script>
-    <link rel="stylesheet" crossorigin href="/qr-alarm-mini/assets/index-kQJbKSsj.css">
-  <link rel="manifest" href="/qr-alarm-mini/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/qr-alarm-mini/registerSW.js"></script></head>
-  <body>
-    <div id="root"></div>
-  </body>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link rel="modulepreload" href="./_app/immutable/entry/start.B7pThvcj.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.CTrM9_IP.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/runtime.DTMe_Voh.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.BivfI1ov.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/render.D1gSxqPL.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/disclose-version.S3VD1cWG.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/store.DT4w5LnU.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.C17SCtF0.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.Duf52vRb.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!----><!----><h1>Welcome to SvelteKit</h1> <h1>a is 0</h1> <button>Increment</button><!----><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_smpci8 = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.B7pThvcj.js"),
+						import("./_app/immutable/entry/app.BivfI1ov.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
 </html>

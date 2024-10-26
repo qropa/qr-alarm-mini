@@ -3,6 +3,7 @@
     "description": "app_description",
     "display": "standalone",
     "start_url": "/",
+    "scope": "/qr-alarm-mini/",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

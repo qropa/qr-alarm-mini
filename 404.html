@@ -3,12 +3,13 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="/favicon.png" />
+		<link rel="manifest" href="/manifest.json" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-		<link rel="modulepreload" href="/_app/immutable/entry/start.DBd4giIc.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/entry.Ch2lu1Yz.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/start.BcrkZhxF.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/entry.BwCDr4kd.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/runtime.DTMe_Voh.js">
-		<link rel="modulepreload" href="/_app/immutable/entry/app.Bbbf28MR.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.D2fBVvfq.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/render.D1gSxqPL.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/disclose-version.S3VD1cWG.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/store.DT4w5LnU.js">
@@ -17,18 +18,24 @@
 		<div style="display: contents">
 			<script>
 				{
-					__sveltekit_n6kbrq = {
+					__sveltekit_pc1g9r = {
 						base: ""
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("/_app/immutable/entry/start.DBd4giIc.js"),
-						import("/_app/immutable/entry/app.Bbbf28MR.js")
+						import("/_app/immutable/entry/start.BcrkZhxF.js"),
+						import("/_app/immutable/entry/app.D2fBVvfq.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});
+
+					if ('serviceWorker' in navigator) {
+						addEventListener('load', function () {
+							navigator.serviceWorker.register('/service-worker.js');
+						});
+					}
 				}
 			</script>
 		</div>
